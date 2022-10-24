@@ -71,5 +71,52 @@ test('covert 23:30 to 2330', () => {
     expect(format_time('23:30')).toBe('2330');
 });
 
+test('covert 8a to 0800', () => {
+    expect(format_time('8a')).toBe('0800');
+});
+
+test('covert 8 am to 0800', () => {
+    expect(format_time('8 am')).toBe('0800');
+});
+
+test('covert 8:00 to 0800', () => {
+    expect(format_time('8am')).toBe('0800');
+});
+
+test('covert 800 to 0800', () => {
+    expect(format_time('800')).toBe('0800');
+});
+
+test('covert 8:00a to 0800', () => {
+    expect(format_time('8:00a')).toBe('0800');
+});
+
+test('covert 8:00 am to 0800', () => {
+    expect(format_time('8:00 am')).toBe('0800');
+});
+
+test('covert 8:00 am to 0800', () => {
+    expect(format_time('8:00am')).toBe('0800');
+});
+
+test('covert 10a to 1000', () => {
+    expect(format_time('10a')).toBe('1000');
+});
+
+test('covert 10:00a to 1000', () => {
+    expect(format_time('10:00a')).toBe('1000');
+});
+
+test('covert 10p to 2200', () => {
+    expect(format_time('10p')).toBe('2200');
+});
+
+test('covert 10:00p to 2200', () => {
+    expect(format_time('10:00p')).toBe('2200');
+});
+
+test('covert 10pm to 2200', () => {
+    expect(format_time('10pm')).toBe('2200');
+});
 
   
